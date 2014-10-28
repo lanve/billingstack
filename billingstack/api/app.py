@@ -81,8 +81,8 @@ def start():
     LOG.info('Starting server in PID %s' % os.getpid())
     LOG.info("Configuration:")
     
-    #lanve add
-    #cfg.CONF.log_opt_values(LOG, logging.INFO)
+   
+    cfg.CONF.log_opt_values(LOG, logging.INFO)
 
     if host == '0.0.0.0':
         LOG.info('serving on 0.0.0.0:%s, view at http://127.0.0.1:%s' %
