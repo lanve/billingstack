@@ -23,12 +23,17 @@ allowed_rpc_exception_modules = billingstack.exceptions, billingstack.openstack.
 # cors_allowed_origin = *
 # cors_max_age = 3600
 
+#rabbit 
+rabbit_host=localhost
+rabbit_password=123456
+
 [service:api]
 # Address to bind the API server
 # api_host = 0.0.0.0
+api_listen = 0.0.0.0
 
 # Port the bind the API server to
-#api_port = 9001
+api_port = 9001
 
 #################################################
 #                Central service
